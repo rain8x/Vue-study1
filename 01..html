@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue JS </title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-model="name" placeholder="Nguyen Ba Cuong">
+      <h1>你好,{{Nguyen Ba Cuong}}</h1>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script>
+      var app = new Vue ({
+        el: `#app`,
+        data: {
+          name: `Nho Van Anh`
+        }
+      })
+      console.log(app.name);
+    </script>
+  </body>
+</html>
